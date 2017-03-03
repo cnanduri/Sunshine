@@ -10,7 +10,7 @@
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
     tools:showIn="@layout/activity_main"
-    tools:context="app.udacity.android.cn.sunshine.MainActivityFragment">
+    tools:context="app.udacity.android.cn.sunshine.ForecastFragment">
 
     <ListView
         android:id="@+id/listview_forecast"
