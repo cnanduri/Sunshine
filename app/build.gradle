@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -19,7 +20,7 @@ android {
     }
 
     buildTypes.each {
-            it.buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY', '"be662ee86fbf362edd3fbefb9990c085"'
+        it.buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY', '"be662ee86fbf362edd3fbefb9990c085"'
     }
 }
 
@@ -30,5 +31,8 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:support-vector-drawable:24.2.1'
     testCompile 'junit:junit:4.12'
 }
