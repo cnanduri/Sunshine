@@ -167,7 +167,7 @@ public class DetailActivityFragment extends Fragment implements LoaderManager.Lo
      */
     private String formatHighLows(double high, double low) {
         boolean isMetric = Utility.isMetric(getContext());
-        String highLowStr = Utility.formatTemperature(high, isMetric) + "/" + Utility.formatTemperature(low, isMetric);
+        String highLowStr = Utility.formatTemperature(getContext(), high, isMetric) + "/" + Utility.formatTemperature(getContext(), low, isMetric);
         return highLowStr;
     }
 
